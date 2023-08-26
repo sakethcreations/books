@@ -1,0 +1,89 @@
+/* Reset some default styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("oh.jpeg");
+    background-size: 200px;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: cinzel;
+    font-size: large;
+    text-align: center;
+    background-color: #333;
+    padding: 0.5rem;
+}
+
+nav li:not(:last-child) {
+    margin-right: 1rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 2rem;
+    }
+
+.book {
+        text-align: center;
+        margin: 1rem;
+        padding: 1rem;
+        border: 1px solid #ccc;
+        width: 300px;
+        box-sizing: border-box;
+        height: 550px;
+    }
+
+.book img {
+        max-width: 100%;
+        height: 300px;
+    }
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+h2 {
+    color: black;
+}
+
+/* Media query for screens smaller than 600px */
+@media (max-width: 600px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .book {
+        width: 80%;
+    }
+    button {
+        max-width: 100%;
+        word-wrap: break-word;
+    }
+}
